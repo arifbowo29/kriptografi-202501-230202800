@@ -1,95 +1,102 @@
-# Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+🏛️ 1. Zaman Kuno
 
----
+Kriptografi berasal dari bahasa Yunani: kryptos (tersembunyi) dan graphein (menulis), artinya “tulisan tersembunyi”.
 
-## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Mesir Kuno (±1900 SM): Penggunaan simbol-simbol hieroglif rahasia dalam prasasti untuk menyembunyikan pesan.
 
----
+Sparta (abad ke-5 SM): Menggunakan alat bernama scytale — sebatang kayu tempat menggulung pita kulit dengan pesan yang hanya bisa dibaca dengan batang berukuran sama.
 
-## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Julius Caesar (abad ke-1 SM): Menggunakan sandi Caesar Cipher — mengganti setiap huruf dengan huruf lain yang berjarak tetap (misalnya, A diganti D jika jaraknya 3).
 
----
+⚔️ 2. Abad Pertengahan
 
-## 3. Alat dan Bahan
-(- Python 3.x  
-- Visual Studio Code / editor lain  
-- Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
+Sandi substitusi dan transposisi mulai berkembang untuk komunikasi diplomatik dan militer.
 
----
+Arab abad ke-9: Ilmuwan Al-Kindi menulis Risalah tentang Dekripsi Pesan Terenkripsi, yang memperkenalkan analisis frekuensi — metode pertama untuk memecahkan sandi berdasarkan pola huruf.
 
-## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+💡 3. Zaman Renaisans hingga Abad ke-19
 
----
+Leon Battista Alberti (1400-an): Menciptakan cipher disk, alat enkripsi polialfabetik pertama.
 
-## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
+Blaise de Vigenère (1500-an): Mengembangkan Vigenère Cipher, sandi polialfabetik yang jauh lebih sulit dipecahkan.
 
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
+Abad ke-19: Kriptografi masih bersifat manual dan digunakan dalam komunikasi diplomatik dan militer.
 
----
+⚙️ 4. Abad ke-20 (Era Mesin dan Perang Dunia)
 
-## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+Perang Dunia I & II: Kriptografi menjadi senjata strategis.
 
-Hasil eksekusi program Caesar Cipher:
+Jerman menggunakan Mesin Enigma, dan sekutu memecahkannya dengan bantuan Alan Turing di Bletchley Park.
 
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+Setelah perang, kriptografi berkembang menjadi ilmu matematis dengan fokus pada keamanan komunikasi elektronik.
 
----
+💻 5. Era Komputer (1970–1990-an)
 
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
----
+1970-an: IBM dan NSA mengembangkan DES (Data Encryption Standard) — standar enkripsi pertama yang digunakan secara luas.
 
-## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+1976: Whitfield Diffie & Martin Hellman memperkenalkan konsep kriptografi kunci publik, yang memungkinkan enkripsi tanpa berbagi kunci rahasia sebelumnya.
 
----
+1977: Ditemukan RSA Algorithm, dasar dari banyak sistem keamanan modern.
 
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
+🌐 6. Era Internet & Modern (2000-an – Sekarang)
 
----
+Kriptografi menjadi dasar keamanan digital: HTTPS, email terenkripsi, tanda tangan digital, dan cryptocurrency.
 
-## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+AES (Advanced Encryption Standard) menggantikan DES pada tahun 2001.
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
-```
+Blockchain & Cryptocurrency (Bitcoin, 2009): Menggabungkan kriptografi dengan teori desentralisasi.
+
+Saat ini, penelitian fokus pada kriptografi kuantum dan post-quantum cryptography untuk menghadapi ancaman komputer kuantum.
+
+
+
+🔐 1. Confidentiality (Kerahasiaan)
+
+Kerahasiaan berarti menjaga agar informasi hanya bisa diakses oleh orang yang berwenang. Tujuannya adalah mencegah kebocoran data kepada pihak yang tidak berhak. Dalam kriptografi, hal ini dicapai dengan enkripsi, yaitu mengubah data menjadi bentuk kode yang tidak bisa dibaca tanpa kunci tertentu.
+🧩 Contoh: Pesan WhatsApp yang terenkripsi tidak bisa dibaca oleh siapa pun selain pengirim dan penerima.
+
+✅ 2. Integrity (Integritas)
+
+Integritas memastikan bahwa data tetap asli, tidak diubah, dihapus, atau disisipkan selama proses pengiriman maupun penyimpanan. Kriptografi menjaga integritas dengan hash function atau digital signature, sehingga setiap perubahan sekecil apa pun dapat terdeteksi.
+🧩 Contoh: Saat mengunduh file, sistem memeriksa “checksum” untuk memastikan file tidak dimodifikasi oleh pihak lain.
+
+⚙️ 3. Availability (Ketersediaan)
+
+Ketersediaan berarti data dan sistem selalu bisa diakses oleh pengguna yang berhak kapan pun dibutuhkan. Kriptografi berperan menjaga keamanan sistem tanpa menghalangi akses sah. Untuk menjaga ketersediaan, digunakan langkah-langkah seperti backup data, server cadangan, dan perlindungan dari serangan DoS (Denial of Service).
+🧩 Contoh: Layanan perbankan online harus tetap bisa diakses 24 jam walau ada upaya peretasan.
+
+🧭 Kesimpulan
+
+Confidentiality, Integrity, dan Availability (CIA Triad) adalah tiga pilar utama keamanan informasi dalam kriptografi.
+
+Confidentiality melindungi dari kebocoran data,
+
+Integrity menjaga keaslian data, dan
+
+Availability memastikan data tetap dapat digunakan.
+
+Ketiganya bekerja bersama agar sistem informasi aman, andal, dan terpercaya.
+
+🧑‍🏫 1. Tokoh yang dianggap sebagai Bapak Kriptografi Modern
+
+➡️ Whitfield Diffie dan Martin Hellman dianggap sebagai bapak kriptografi modern.
+Mereka memperkenalkan konsep kriptografi kunci publik (Public Key Cryptography) pada tahun 1976, yang menjadi dasar semua sistem keamanan digital modern seperti SSL, email terenkripsi, dan tanda tangan digital.
+
+🔑 2. Algoritma kunci publik yang populer digunakan saat ini
+
+Beberapa algoritma yang paling banyak digunakan:
+
+RSA (Rivest–Shamir–Adleman) → digunakan untuk enkripsi dan tanda tangan digital.
+
+Diffie–Hellman → untuk pertukaran kunci rahasia secara aman.
+
+Elliptic Curve Cryptography (ECC) → versi lebih efisien dari RSA, banyak digunakan pada perangkat mobile dan blockchain.
+
+DSA (Digital Signature Algorithm) → khusus untuk verifikasi tanda tangan digital.
+
+⚙️ 3. Perbedaan utama antara kriptografi klasik dan kriptografi modern
+Aspek	Kriptografi Klasik	Kriptografi Modern
+Teknik	Mengandalkan penggantian (substitusi) dan penyusunan ulang (transposisi) huruf.	Menggunakan matematika kompleks dan algoritma komputer.
+Jenis kunci	Hanya kunci simetris (kunci pengirim = kunci penerima).	Ada kunci simetris dan kunci publik (asimetris).
+Media	Digunakan untuk pesan teks (manusia).	Digunakan untuk data digital (komputer & jaringan).
+Contoh	Caesar Cipher, Vigenère Cipher	RSA, AES, ECC, DES, AES
