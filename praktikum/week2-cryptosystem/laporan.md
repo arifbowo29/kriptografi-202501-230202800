@@ -67,9 +67,12 @@ Hasil eksekusi program Caesar Cipher:
 
 ---
 
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
+## 7. Jawaban Pertanyaan  
+- Pertanyaan 1:  Plaintext	Pesan asli atau data yang belum dienkripsi.
+    Ciphertext	Hasil dari proses enkripsi, berupa pesan yang sudah disandikan.
+    Algoritma Enkripsi	Proses atau rumus matematis yang digunakan untuk mengubah plaintext menjadi ciphertext.
+    Algoritma Dekripsi	Proses kebalikan dari enkripsi, untuk mengubah ciphertext kembali menjadi plaintext.
+    Kunci (Key)	Nilai rahasia yang digunakan dalam proses enkripsi dan dekripsi. Tanpa kunci yang benar, pesan tidak dapat dibaca.
 - Pertanyaan 2: …  
 )
 ---
