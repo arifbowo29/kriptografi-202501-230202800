@@ -73,12 +73,16 @@ Hasil eksekusi program Caesar Cipher:
     Algoritma Enkripsi	Proses atau rumus matematis yang digunakan untuk mengubah plaintext menjadi ciphertext.
     Algoritma Dekripsi	Proses kebalikan dari enkripsi, untuk mengubah ciphertext kembali menjadi plaintext.
     Kunci (Key)	Nilai rahasia yang digunakan dalam proses enkripsi dan dekripsi. Tanpa kunci yang benar, pesan tidak dapat dibaca.
-- Pertanyaan 2: …  
+- Pertanyaan 2: Simetris unggul dalam kecepatan dan efisiensi, tapi asimetris lebih unggul dalam keamanan dan manajemen kunci.
+- pertanyaan 3: Distribusi kunci adalah masalah utama dalam kriptografi simetris karena:Pengirim dan penerima harus memiliki kunci yang sama,Kunci tersebut harus dikirimkan terlebih dahulu melalui saluran komunikasi,Jika kunci tersebut disadap oleh pihak ketiga, maka seluruh pesan terenkripsi bisa dibuka,Tidak ada cara aman bawaan dalam sistem simetris untuk mendistribusikan kunci tersebut.Karena itu, banyak sistem modern menggabungkan kriptografi simetris dan asimetris (misalnya pada SSL/TLS): kunci simetris dikirim dengan cara aman menggunakan algoritma asimetris. 
 )
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Kriptosistem terdiri dari komponen utama seperti plaintext, ciphertext, algoritma enkripsi-dekripsi, dan kunci yang menjadi inti proses keamanan data.
+Dalam perbandingan antara sistem simetris dan asimetris, sistem simetris lebih cepat dan sederhana, namun memiliki kelemahan besar pada keamanan distribusi kunci.
+Masalah utama pada kriptografi simetris adalah pengiriman kunci secara aman antara pengirim dan penerima — jika kunci bocor, maka seluruh pesan bisa terbaca oleh pihak tidak berwenang.
+Oleh karena itu, kombinasi antara sistem simetris dan asimetris sering digunakan untuk menyeimbangkan antara kecepatan dan keamanan dalam komunikasi data modern.
 
 ---
 
@@ -95,7 +99,7 @@ Contoh:
 Contoh:
 ```
 commit abc12345
-Author: Nama Mahasiswa <email>
+Author: Arif bowo laksono <bowoarif65@gmail.com>
 Date:   2025-09-20
 
     week2-cryptosystem: implementasi Caesar Cipher dan laporan )
