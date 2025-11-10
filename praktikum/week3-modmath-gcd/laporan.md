@@ -51,9 +51,6 @@ if __name__ == "__main__":
 - Jelaskan apakah hasil sesuai ekspektasi.  
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
 )
 
 ---
@@ -83,9 +80,9 @@ Schneier, B. (2015). Applied Cryptography: Protocols, Algorithms, and Source Cod
 (Tuliskan bukti commit Git yang relevan.  
 Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit modularmatch
+Author: Arif Bowo Laksono <bowoarif65@gmail.com>
+Date:   2025-11-10
 
     week2-cryptosystem: implementasi Caesar Cipher dan laporan )
 ```
