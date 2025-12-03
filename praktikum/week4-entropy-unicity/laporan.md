@@ -27,7 +27,6 @@ Unicity distance adalah ukuran berapa banyak ciphertext yang dibutuhkan penyeran
 (- Python 3.x  
 - Visual Studio Code / editor lain  
 - Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
 
 ---
 
@@ -75,15 +74,21 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Percobaan menunjukkan bahwa Caesar Cipher sangat lemah karena hanya memiliki 26 kemungkinan kunci dengan entropi sekitar 4,7 bit. Unicity distance yang kecil membuat kunci mudah ditemukan hanya dari sedikit ciphertext. Brute force juga hampir instan karena jumlah percobaannya sangat sedikit. Secara keseluruhan, Caesar Cipher tidak aman dan hanya cocok untuk pembelajaran dasar.
 
 ---
 
 ## 9. Daftar Pustaka
 (Cantumkan referensi yang digunakan.  
 Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
+Shannon, C. E. (1949). Communication Theory of Secrecy Systems. Bell System Technical Journal, 28(4), 656–715.
+(Referensi utama konsep entropy, redundancy, dan unicity distance.)
+
+Stallings, W. (2017). Cryptography and Network Security: Principles and Practice (7th ed.). Pearson.
+(Pembahasan lengkap tentang evaluasi kekuatan kunci, brute force, serta cipher klasik seperti Caesar.)
+
+Singhal, R. & Raina, R. (2014). Caesar Cipher and Basic Cryptanalysis. International Journal of Computer Science and Information Technologies.
+(Menjelaskan kelemahan Caesar Cipher dan metode brute force.)
 
 ---
 
@@ -91,9 +96,9 @@ Contoh:
 (Tuliskan bukti commit Git yang relevan.  
 Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit Arifbowo
+Author: Arif bowo laksono <bowoarif65@gmail.com>
+Date:   2025-12-3
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+Week-4 Entropy & Unicity Distance: (Evaluasi Kekuatan Kunci dan Brute Force)
 ```
