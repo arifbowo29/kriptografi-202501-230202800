@@ -1,20 +1,25 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Topik: Entropy & Unicity Distance (Evaluasi Kekuatan Kunci dan Brute Force)
+Nama: ARIF BOWO LAKSONO  
+NIM: 230202800
+Kelas: 5IKKA  
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Menyelesaikan perhitungan sederhana terkait entropi kunci.
+Menggunakan teorema Euler pada contoh perhitungan modular & invers.
+Menghitung unicity distance untuk ciphertext tertentu.
+Menganalisis kekuatan kunci berdasarkan entropi dan unicity distance.
+Mengevaluasi potensi serangan brute force pada kriptosistem sederhana.
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Entropy adalah ukuran seberapa acak dan sulit ditebaknya sebuah kunci dalam kriptografi. Semakin tinggi entropi, semakin besar jumlah kemungkinan kunci yang harus dicoba penyerang, sehingga brute force jadi jauh lebih sulit. Entropi diukur dalam bit, dan kunci dengan entropi tinggi—seperti kunci 128 bit atau 256 bit—punya ruang kemungkinan yang sangat besar sehingga tidak realistis untuk dipecahkan dengan percobaan acak.
+
+Unicity distance adalah ukuran berapa banyak ciphertext yang dibutuhkan penyerang untuk bisa menentukan kunci secara pasti dengan memanfaatkan pola atau redundansi pada data. Jika nilai unicity distance besar, artinya walaupun banyak ciphertext bocor, penyerang tetap kesulitan menemukan kunci. Dalam evaluasi kekuatan kunci, entropi yang besar dan unicity distance yang tinggi membuat serangan brute force semakin tidak efektif, sehingga sistem kriptografi menjadi jauh lebih aman.
 
 ---
 
@@ -65,8 +70,9 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
+- Pertanyaan 1: …  Entropy menunjukkan tingkat keacakan kunci; semakin besar nilainya, semakin sulit kunci ditebak karena ruang kemungkinan makin luas.
+- Pertanyaan 2: …  Unicity distance menentukan seberapa banyak ciphertext yang dibutuhkan untuk memastikan kunci bisa dipecahkan, sehingga makin besar nilainya, makin aman cipher dari analisis kunci.
+- Pertanyaan 3: …  Meskipun algoritma kuat, brute force tetap berbahaya karena peningkatan kemampuan hardware, teknik optimasi, dan serangan otomatis yang bisa mencoba kunci dalam jumlah besar dengan cepat.
 )
 ---
 
