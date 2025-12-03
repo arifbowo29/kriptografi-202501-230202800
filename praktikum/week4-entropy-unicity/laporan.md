@@ -1,5 +1,5 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
+Minggu ke-: 4
 Topik: Entropy & Unicity Distance (Evaluasi Kekuatan Kunci dan Brute Force)
 Nama: ARIF BOWO LAKSONO  
 NIM: 230202800
@@ -45,12 +45,10 @@ Contoh format:
 Gunakan blok kode:
 
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
-
+def unicity_distance_bits(key_entropy_bits: float, redundancy_bits_per_char: float) -> float:
+    if redundancy_bits_per_char <= 0:
+        raise ValueError("redundancy_bits_per_char harus > 0")
+    return key_entropy_bits / redundancy_bits_per_char
 ---
 
 ## 6. Hasil dan Pembahasan
