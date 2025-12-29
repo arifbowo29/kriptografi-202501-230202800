@@ -1,20 +1,22 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: VII  
+Topik: Diffie-Hellman Key Exchange
+Nama: ARIF BOWO LAKSONO
+NIM: 230202800
+Kelas: 5IKKA
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Melakukan simulasi protokol Diffie-Hellman untuk pertukaran kunci publik.
+Menjelaskan mekanisme pertukaran kunci rahasia menggunakan bilangan prima dan logaritma diskrit.
+Menganalisis potensi serangan pada protokol Diffie-Hellman (termasuk serangan Man-in-the-Middle / MITM).
+
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Diffie–Hellman Key Exchange adalah metode kriptografi kunci publik yang digunakan untuk menyepakati kunci rahasia bersama melalui jaringan yang tidak aman. Metode ini bekerja dengan memanfaatkan kesulitan perhitungan logaritma diskret, sehingga kunci privat tidak dapat dengan mudah ditebak meskipun parameter publik diketahui. Dua pihak bertukar kunci publik hasil perpangkatan modulo bilangan prima, lalu masing-masing menghitung kunci rahasia yang sama tanpa pernah mengirimkannya secara langsung. Namun, Diffie–Hellman tidak menyediakan autentikasi, sehingga rentan terhadap serangan Man-in-the-Middle dan perlu dikombinasikan dengan mekanisme keamanan tambahan seperti sertifikat digital.
 
 ---
 
@@ -40,9 +42,14 @@ Contoh format:
 Gunakan blok kode:
 
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+# public key
+A = pow(g, a, p)
+B = pow(g, b, p)
+
+# exchange public key dan hitung kunci bersama
+shared_secret_A = pow(B, a, p)
+shared_secret_B = pow(A, b, p)
+
 ```
 )
 
@@ -65,13 +72,14 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
+- Pertanyaan 1: Karena kunci rahasia dihitung dari kunci publik dan kunci privat menggunakan operasi matematika yang sulit dibalik (logaritma diskret), sehingga kunci privat tidak dapat ditebak meskipun komunikasi disadap.
+- Pertanyaan 2:Tidak memiliki mekanisme autentikasi, sehingga rentan terhadap serangan Man-in-the-Middle (MITM)
+- Pertanyaan 3:Dengan menambahkan autentikasi seperti tanda tangan digital, sertifikat digital (PKI), atau menggunakan protokol aman seperti TLS.
 )
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan beberapa kali percobaan, pertukaran kunci Diffie–Hellman hanya berhasil menghasilkan kunci yang sama ketika tidak terjadi gangguan pada proses pertukaran kunci publik. Pada percobaan yang melibatkan serangan Man-in-the-Middle, kunci yang dihasilkan Alice dan Bob menjadi berbeda sehingga komunikasi gagal. Hal ini menunjukkan bahwa Diffie–Hellman murni rentan terhadap serangan MITM dan memerlukan mekanisme autentikasi agar pertukaran kunci dapat berjalan dengan aman.
 
 ---
 
@@ -87,9 +95,9 @@ Contoh:
 (Tuliskan bukti commit Git yang relevan.  
 Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+week7-diffie-hellman
+Author: Arif Bowo Laksono (bowoarif65@gmail.com)
+Date:   2025-12-29
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week7-cDiffie-Hellman Key Exchange
 ```
